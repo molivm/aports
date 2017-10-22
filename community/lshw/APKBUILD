@@ -2,13 +2,14 @@
 # Maintainer: Paul Kilar <pkilar@gmail.com>
 pkgname=lshw
 pkgver='02.17'
-pkgrel=2
+pkgrel=3
 pkgdesc="Hardware Lister"
 url="http://ezix.org/project/wiki/HardwareLiSter"
 arch="all"
 license="GPL3+"
 makedepends="sqlite-dev linux-headers"
 subpackages="$pkgname-doc $pkgname-lang"
+options="!check"
 source="http://ezix.org/software/files/lshw-B.$pkgver.tar.gz
 	no-private-uint.patch
 	basename-limits-long-bits.patch
